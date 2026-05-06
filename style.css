@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Explicando o efeito do card css */
+/* opacity: 1; (Define a opacidade (visibilidade)
+1 = totalmente visível
+0 = invisível
+
+👉 Então aqui opacity: 1: O card fica visível
+
+🔸 transform: scale(1); (Define o tamanho do elemento)
+scale(1) = tamanho normal (100%)
+scale(0.9) = um pouco menor
+
+👉 Então aqui : scale(1) O card volta ao tamanho normal */
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  width: 280px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.3s ease;
+}
+
+.card.ativo {
+  opacity: 1;
+  transform: scale(1);
+}
+/* Explicando o efeito do card css */
+/* ========================= */
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #3b82f6;
+}
+
+.nome {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
