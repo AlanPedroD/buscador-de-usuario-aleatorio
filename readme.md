@@ -4,6 +4,12 @@ Aplicação web simples que consome uma API externa para gerar e exibir usuário
 
 ---
 
+## 🌐 Demo ao Vivo
+
+Acesse a aplicação diretamente pelo navegador, sem precisar baixar nada:
+
+👉 [Abrir aplicação](https://alanpedrod.github.io/buscador-de-usuario-aleatorio/)
+
 ## ✨ Funcionalidades
 
 - Geração de usuários aleatórios com um clique
